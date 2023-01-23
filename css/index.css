@@ -170,7 +170,7 @@ h2 {
 }
 
 h3 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 p,
@@ -189,7 +189,7 @@ header {
 }
 .backgraund-color {
   background-color: rgb(0, 4, 17, 0.8);
-  height: 34vh;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -206,9 +206,9 @@ header .icon {
 }
 .icon i {
   font-size: 3em;
-  max-width: 6em;
-  padding: 2.6vw;
-  padding-top: 0.3em;
+  max-width: 3em;
+  padding: 1vw;
+  padding-top: 0.8em;
 }
 
 /* spacers */
@@ -227,7 +227,6 @@ header .icon {
 /* gallery section */
 .gallery {
   width: 100%;
-  height: 150vh;
   text-align: center;
   background-color: rgb(0, 4, 17);
 }
@@ -239,11 +238,14 @@ header .icon {
 .gallery img {
   padding-bottom: 10vh;
 }
+.gallery h2 {
+  padding-top: 2%;
+}
 
 /* about us section */
 .about {
   width: 100%;
-  height: 115vh;
+  height: 90vh;
   text-align: center;
   background-image: url("../img/staff-cooks.jpg");
   background-size: cover;
@@ -258,15 +260,17 @@ header .icon {
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 4, 17, 0.8);
-  position: relative;
 }
-
 .about h2 {
   width: 100%;
 }
-
 .about-container .text {
   width: 50%;
+  font-size: 2rem;
+}
+.about-container p {
+  font-size: 2.3rem;
+  text-align: center;
 }
 
 /* contact us section */
@@ -319,7 +323,7 @@ header .icon {
 /* footer section */
 footer {
   width: 100%;
-  height: 17vh;
+
   padding-top: 2.5vh;
   font-size: 3rem;
   margin-top: 0.5vh;
@@ -339,7 +343,6 @@ footer .menü {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 footer .menü a {
@@ -349,7 +352,7 @@ footer .menü a {
 footer .menü p {
   font-size: small;
   text-align: right;
-  padding-top: 1vh;
+  padding-top: 6vh;
 }
 input {
   margin: auto;
@@ -364,18 +367,32 @@ button {
   padding-right: 3vw;
 }
 /* mobile media query */
-@media (max-width: 428px) {
+@media (max-width: 560px) {
   /* header section */
+  h1 {
+    font-size: 4rem;
+    padding-bottom: 5vh;
+  }
+  header .Menü {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon i {
+    padding: 2vw;
+  }
 
   /* gallery section */
   .gallery {
     height: auto;
   }
+  .gallery img {
+    width: 100%;
+  }
 
   /* about us section */
 
   .about {
-    height: 200vh;
+    height: 110vh;
   }
 
   .about h2 {
@@ -415,5 +432,32 @@ button {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+    flex-direction: column;
+  }
+  footer .menü {
+    margin: 2rem;
+  }
+
+  footer .menü a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .menü p {
+    font-size: small;
+    text-align: center;
+  }
+  .menü p {
+    padding-right: 0vw;
+  }
+  input {
+    margin-top: 2vh;
+    margin-left: 0vw;
+  }
+  button {
+    width: 62%;
+    padding: 0;
+    margin: 0;
   }
 }
